@@ -7,6 +7,9 @@ body {
 button.btn {
   background-color: #009DAE;
 }
+a.btn {
+  background-color: #009DAE;
+}
 
 #name {
   color: rgb(133, 68, 133);
@@ -33,4 +36,22 @@ div.col {
   font-size: 1em;
   font-weight: bolder;
 }
+.icon-size {
+  font-size: 30px;
+  color: #009DAE;
+}
 
+.card-img-top {
+  height: 140px;
+  object-fit: contain;
+}
+.card {
+  padding: 10px;
+  margin: 10px;
+}
+
+.image-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
