@@ -86,6 +86,30 @@ footer {
   background-color: whitesmoke;
 }
 
+.form-container {
+  margin-top: 20%;
+  margin-left: 35px;
+}
+.inputbox-size {
+    margin-top: 10%;
+    width: 200px;
+    display: block;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
 @media screen
   and (min-device-width: 1200px)
   and (max-device-width: 1600px)
@@ -116,6 +140,25 @@ footer {
 div.col {
   margin-top: 120px;
   margin-left: 100px;
+}
+
+.inputbox-size {
+    margin-top: 5%;
+    width: 350px;
+    display: block;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 }
