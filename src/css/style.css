@@ -1,7 +1,7 @@
 
 body {
   background-image: url("./../../public/images/bg-template.jpg");
-  background-size: cover;
+  background-size: contain;
 }
 
 button.btn {
@@ -27,7 +27,10 @@ img {
 }
 
 div.col {
-  margin: 60px;
+  margin-top: 60px;
+  margin-left: 20px;
+  margin-right: 10px;
+  text-align: start;
 }
 
 #hire-tag {
@@ -56,6 +59,63 @@ div.card {
 
 .image-card-container {
   display: flex;
+  flex-direction: column;
+}
+
+.vl {
+  border-left: 6px solid  rgb(238, 126, 95);;
+  height: 450px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  margin-top: -1%;
+}
+
+#exp-title {
+  font-weight: bolder;
+  color: rgb(133, 68, 133);
+}
+
+
+#edu-title {
+  font-weight: bolder;
+  color: rgb(133, 68, 133);
+}
+
+footer {
+  background-color: whitesmoke;
+}
+
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) {
+
+  .edu-cards {
+  margin-left: 55%;
+}
+  .exp-cards {
+  margin-left: 15%;
+}
+  #edu-title {
+  margin-left: 23%;
+}
+
+#exp-title {
+  margin-top: 20%;
+  margin-left: 60%;
+}
+
+.image-card-container {
+  display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+div.col {
+  margin-top: 120px;
+  margin-left: 100px;
+}
+
 }
