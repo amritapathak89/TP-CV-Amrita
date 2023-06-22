@@ -36,14 +36,13 @@
 </header>
   <main>
     <div class="container container-fluid">
-      <form class="form-box" action="">
+      <form class="form-box" id="form" action="" novalidate>
         <label for="email"></label>Enter Email
-        <input type="email" name="email" class="inputboxes"id="email">
-        <h3 id="display-emailMsg"></h3>
-        <label for="password"></label>Password
-        <input type="password" name="password" class="inputboxes" id="password">
-        <h3 id="display-passwordMsg"></h3>
-        <button type="submit" value="submit" id="submitBtn">Submit
+        <input type="email" name="email" class="inputbox" id="email">
+        <p id="display-emailMsg"></p>
+        <label for="text-box"></label>Message
+        <input type="text" id="msgBox">
+        <input type="submit" id="submitBtn">
       </form>
     </div>
   </main>

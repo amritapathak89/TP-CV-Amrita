@@ -1,16 +1,23 @@
-const submitBtn = document.querySelector('#submitBtn');
-submitBtn.addEventListener('submit', validateEmail);
-const inputEmail = document.querySelector('#exampleInputEmail1');
-const passwordInput = document.querySelector('#exampleInputPassword1');
-const emailErrorMsg = document.querySelector("#emailHelp");
+const submitForm = document.querySelector('#form');
+submitForm.addEventListener("submit", validateEmail);
+const inputEmail = document.querySelector('#email');
+const emailMsg = document.querySelector("#display-emailMsg");
+const msgBox = document.querySelector("#msgBox");
 
-function validateEmail(inputEmail, passwordInput) {
+function validateEmail(e) {
+  e.preventDefault();
+  let msgInput = msgBox.value;
   var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   if (inputEmail.value.match(validRegex)) {
     console.log('correct email');
-    emailErrorMsg.innerHTML = "Valid email address";
-  } else {
-    emailErrorMsg.innerHTML = "Invalid email address!";
+    emailMsg.innerHTML = "Valid email address";
+    return true;
   }
-  
+  else {
+    emailMsg.innerHTML = "Invalid email address!";
+    console.log('incorrect email');
+    return false;
+  }
+
 }
+
