@@ -63,7 +63,7 @@ div.card {
 }
 
 .vl {
-  border-left: 6px solid  rgb(238, 126, 95);;
+  border-left: 6px solid  rgb(238, 126, 95);
   height: 450px;
   position: absolute;
   left: 50%;
@@ -108,6 +108,28 @@ footer {
     border-radius: var(--bs-border-radius);
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+.form-box{
+  margin: 100px;
+  margin-left: 50px;
+}
+
+#submitBtn {
+  width: 80px;
+  height: 40px;
+  margin-top: 60px;
+  background-color: #009DAE;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  border-radius: 15px;
+  border: 1px solid #009DAE ;
+}
+.inputboxes {
+  border-radius: 15px;
+  margin-top: 10px;
+  background-color:rgb(235, 245, 245);
+  border: 1px solid rgb(238, 126, 95);
+}
+
 
 
 @media screen
@@ -160,5 +182,30 @@ div.col {
     border-radius: var(--bs-border-radius);
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+
+.form-box{
+  margin-top: 200px;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  width: 300px;
+}
+#submitBtn {
+  width: 100px;
+  height: 50px;
+  margin-top: 20px;
+  background-color: #009DAE;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  border-radius: 15px;
+  border: 1px solid #009DAE ;
+}
+.inputboxes {
+  border-radius: 15px;
+  margin-bottom: 10px;
+  background-color: azure;
+}
+
 
 }

@@ -36,23 +36,16 @@
 </header>
   <main>
     <div class="container container-fluid">
-    <form class="form-container">
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="inputbox-size" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="inputbox-size" id="exampleInputPassword1">
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
+      <form class="form-box" action="">
+        <label for="email"></label>Enter Email
+        <input type="email" name="email" class="inputboxes"id="email">
+        <h3 id="display-emailMsg"></h3>
+        <label for="password"></label>Password
+        <input type="password" name="password" class="inputboxes" id="password">
+        <h3 id="display-passwordMsg"></h3>
+        <button type="submit" value="submit" id="submitBtn">Submit
+      </form>
+    </div>
   </main>
 <body>
 <script src="../src/js/script.js"></script>
